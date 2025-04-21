@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/PhotoBooth/static/css/main.48d237dd.css",
+    "main.js": "/PhotoBooth/static/js/main.f249f1ed.js",
+    "static/js/453.e095f1b1.chunk.js": "/PhotoBooth/static/js/453.e095f1b1.chunk.js",
+    "static/media/hook-img.png": "/PhotoBooth/static/media/hook-img.66e279cf6915cfa625f2.png",
+    "index.html": "/PhotoBooth/index.html",
+    "main.48d237dd.css.map": "/PhotoBooth/static/css/main.48d237dd.css.map",
+    "main.f249f1ed.js.map": "/PhotoBooth/static/js/main.f249f1ed.js.map",
+    "453.e095f1b1.chunk.js.map": "/PhotoBooth/static/js/453.e095f1b1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48d237dd.css",
+    "static/js/main.f249f1ed.js"
+  ]
+}
