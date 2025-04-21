@@ -29,7 +29,7 @@ export default function Booth() {
     for (let i = 0; i < 3; i++) {
       for (let c = 3; c >= 1; c--) { 
         setCountdown(c);
-        await new Promise((res) => setTimeout(res, 100));
+        await new Promise((res) => setTimeout(res, 1000));
       }
 
       setCountdown(null); 

@@ -28,8 +28,13 @@ function App() {
     {
       path:'/about',
       element:<><About/></>,
-    },
-  ])
+    }
+  ],
+  {
+    basename: '/PhotoBooth'
+  }
+
+)
   return (
       <>  
       
