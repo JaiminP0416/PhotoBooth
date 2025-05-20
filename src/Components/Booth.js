@@ -180,7 +180,7 @@ export default function Booth() {
     
       {/* Webcam */}
       {(isCapturing || capturedImages.length === 0) && (
-        <Webcam
+        <Webcam className='webcam'
           ref={webcamRef}
           //width={600}
           height={500}
@@ -250,7 +250,7 @@ export default function Booth() {
             fontWeight: "400",
             fontStyle: "normal",
             position: 'absolute',
-            top: '45%',
+            top: '38%',
             left: '50%',
             transform: 'translate(-50%, -50%)',
             fontSize: '5rem',
