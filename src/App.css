@@ -53,7 +53,8 @@
 
 .booth-container{
 
-  background: none;
+  /* background: none; */
+  /* background: #898989; */
   min-height: 100vh;;
 }
 
@@ -170,9 +171,10 @@
 }
 
 .captured-images {
+  padding-top:20px ;
   display: flex;
   justify-content: center;
-  margin:20px;
+  /* margin:20px; */
 }
  
 .form-switch{

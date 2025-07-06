@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 import About from './Components/About';
 import Home from './Components/Home';
-// import Booth from './Components/Booth';
+//import BoothCopy from './Components/Boothcopy2';
 import Booth from './Components/Booth';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 
@@ -20,6 +20,11 @@ function App() {
       // element:<><Navbar/><Booth/></>,
       element:<><Booth/></>,
     },
+    //  {
+    //   path:'/booth',
+    //   // element:<><Navbar/><Booth/></>,
+    //   element:<><BoothCopy/></>,
+    // },
     // {
     //   path:'/booth',
     //   // element:<><Navbar/><Booth/></>,

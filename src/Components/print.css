@@ -1,0 +1,170 @@
+
+/* //////////////////////////////////////////////FRAME 1//////////////////////////////////////////////// */
+.classic {
+    position: relative;
+    background-image: url('../frames/Film-frame.png');
+    background-size:contain;  
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 236px;
+    display: grid;       
+    padding-top:4px ;
+    padding-bottom:5px ;
+}
+
+.classic canvas {
+    margin: 10px 0 5px 18px;
+}
+
+.classic .footer-date{
+
+    display: none;
+}
+
+
+
+/* //////////////////////////////////////////////FRAME 2//////////////////////////////////////////////// */
+
+.simple {
+    display: grid;
+    gap: 0;
+}
+
+.simple canvas {
+    margin: 0;
+}
+
+.simple .footer-date{
+
+    display: none;
+}
+
+
+/* //////////////////////////////////////////////FRAME 3//////////////////////////////////////////////// */
+
+.modern {
+
+    /* GIVE OPTION TO CHANGE COLOR by choice */
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: column;       
+    padding-top:8px ;
+    padding-bottom:5px ;
+    width: 240px;
+    height: 740px;
+    border-radius: 15px;
+}
+
+.modern canvas {
+    margin: 10px 20px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.modern .canvasToDownload {
+
+    margin-bottom: 0;
+}
+
+.modern .footer-date{
+
+    font-family: Pacifico,Courier New, monospace;
+    font-weight: 700;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 10px; */
+}
+
+
+
+/* ///////////////////////////////////EXTRA/////////////////////////// */
+/* .frame-btn {
+  color: blue;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s ease;
+}
+
+.frame-btn.Mui-selected {
+  background-color: lightblue;
+  color: darkblue;
+  font-weight: bold;
+}
+
+
+
+.frame-btn:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+} */
+
+.frame-btn-container {
+
+    display: inline-flex;
+    margin-top: 20px;
+    
+}
+
+
+
+/* button-55 {
+  outline: none;
+  color: #DAA06D;
+  padding: 1em;
+  padding-left: 3em;
+  padding-right: 3em;
+  border: 2px dashed #DAA06D;
+  border-radius: 15px;
+  background-color: #EADDCA;
+  box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+  transition: .1s ease-in-out, .4s color;
+}
+
+button-55:active {
+  transform: translateX(0.1em) translateY(0.1em);
+  box-shadow: 0 0 0 4px #EADDCA, 1.5px 1.5px 2.5px 1.5px rgba(0, 0, 0, 0.5);
+} */
+
+
+
+/* CSS */
+.button-55 {
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-55:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-55:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
