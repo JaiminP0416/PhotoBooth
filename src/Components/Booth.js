@@ -366,6 +366,7 @@ const downloadDivAsImage = async () => {
               <ToggleButton className='button-56' value="simple">None</ToggleButton>
             </ToggleButtonGroup> */}
             {/* <div role="group" aria-label="Platform" style={{ marginTop: 20 }}> */}
+        <span className='frame-inst'>Choose your Frame:</span> 
         <button
           type="button"
           className={`button-55 ${frame === "classic" ? "selected" : ""}`}
