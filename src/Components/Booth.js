@@ -331,7 +331,7 @@ const downloadDivAsImage = async () => {
       {/* Captured images shown vertically */}
       {!isCapturing && capturedImages.length === 3 && (
         <div
-          className="captured-images"
+          className={`captured-images ${frame === 'modern' ? 'modern-move' : ''}`}
         >
           <div id='canvasToDownload' className={frame} style={{ backgroundColor: frame === 'modern' ? color.hex : "" }}>
           {capturedImages.map((src, idx) => (
@@ -389,7 +389,7 @@ const downloadDivAsImage = async () => {
           aria-pressed={frame === "modern"}
           style={{ marginLeft: 8 }}
         >
-          Modern
+          Custom
         </button>
 
         <button

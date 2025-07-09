@@ -49,12 +49,15 @@
     background-color: #a7a7a7;
     display: flex;
     flex-direction: column;       
+    margin-left: 220px;
     padding-top:8px ;
     padding-bottom:5px ;
     width: 240px;
     height: 740px;
     border-radius: 15px;
 }
+
+
 
 .modern canvas {
     margin: 10px 20px;
@@ -75,6 +78,29 @@
     display: flex;
     justify-content: center;
     /* margin-top: 10px; */
+}
+
+.captured-images {
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+/* .modern-move {
+    /* display: flex;
+  justify-content: right;
+  transition: ease-in; */
+
+ /* transform: translateX(-40%);
+} */
+
+@media (max-width: 768px) {
+
+  .modern {
+   margin-left: 300px;
+  
+}
+  .modern-move {
+    transform: translateX(-40%);
+  }
 }
 
 
@@ -141,18 +167,14 @@
   font-style: normal;
 }
 
-.modern {
-  margin-left: 300px;
-  
-}
 
 ColorPicker {
   display: flex;
 }
 
 .rcp {
-  margin-left: 100px; 
-  max-height: 460px;
+  margin-left: 20px; 
+  max-height: 480px;
 }
 
 .rcp-interactive{
@@ -161,7 +183,12 @@ ColorPicker {
 
 .rcp-body{
   padding: 20px 10px 0 10px;
+  width: 200px;
 }
+
+/* #rgb, #hsv, label[for="hsv"], label[for="rgb"] {
+  display: none;
+} */
 
 /* CSS */
 .button-55 {
