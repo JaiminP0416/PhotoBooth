@@ -36,7 +36,7 @@ export default function Home() {
           <span className='bold-span'>To Experience Virtual Photobooth:</span><br/><pre/>
           <span className="tab"> <span className='bold-span'>1.</span> Think of <span className='bold-span'>3 poses</span></span><br/>
           <span className="tab"> <span className='bold-span'>2.</span> Settle in and Click on <span className='bold-span'ong>"Let's Go"</span></span><br/>
-          <span className="tab"> <span className='bold-span'>3.</span> CLick on 📸 </span><br/>
+          <span className="tab"> <span className='bold-span'>3.</span> Click on 📸 </span><br/>
           <span className="tab">  <span className='bold-span'>4.</span> Choose your <span className='bold-span'>Frame</span> and <span className='bold-span'>Download!</span></span>
           <span className='bold-span'><p class="card-footer">Have Fun!</p></span>
         </div>
