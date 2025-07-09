@@ -4,6 +4,8 @@ import Switch from '@mui/material/Switch';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import Webcam from 'react-webcam';
+import { ColorPicker, useColor } from "react-color-palette";
+import "react-color-palette/css";
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -201,6 +203,10 @@ const downloadDivAsImage = async () => {
     setFrame(newFrame);
   };
 
+  const [color, setColor] = useColor("hex", "#dbdbdb");
+  const textColor = parseInt(color.hex.replace('#', ''), 16) > 0xffffff / 2 ? '#000' : '#fff';
+
+
   return (
     <div className="booth-container" style={{ position: 'relative', textAlign: 'center' }}>
         <FontAwesomeIcon icon="fa-solid fa-camera" />
@@ -326,14 +332,8 @@ const downloadDivAsImage = async () => {
       {!isCapturing && capturedImages.length === 3 && (
         <div
           className="captured-images"
-          // style={{
-          //   display: 'flex',
-          //   flexDirection: 'column',
-          //   alignItems: 'center',
-          //   marginTop: '20px',
-          // }}
         >
-          <div id='canvasToDownload' className={frame}>
+          <div id='canvasToDownload' className={frame} style={{ backgroundColor: frame === 'modern' ? color.hex : "" }}>
           {capturedImages.map((src, idx) => (
               <canvas
                 key={idx}
@@ -342,10 +342,16 @@ const downloadDivAsImage = async () => {
                 height={200}
               />
           ))}
-            <div className="footer-date">
+            
+             
+
+            <div className="footer-date" style={{color: frame ==='modern' ? textColor : "black"}} >                 {/* adding dynamic contrast color detection*/}
               ❤ <br/>{new Date().toLocaleDateString('en-CA')}
             </div>
           </div>
+          <div className='color-picker' style={{ display: frame === 'modern' ? 'flex' : 'none' }}>
+          <ColorPicker  color={color} onChange={setColor} />
+        </div>
         </div>
       )}
 
@@ -388,6 +394,15 @@ const downloadDivAsImage = async () => {
 
         <button
           type="button"
+          className={`button-55 ${frame === "heart" ? "selected" : ""}`}
+          onClick={() => handleChange("heart")}
+          aria-pressed={frame === "heart"}
+          style={{ marginLeft: 8 }}
+        >
+          Heart
+        </button>
+        <button
+          type="button"
           className={`button-55 ${frame === "simple" ? "selected" : ""}`}
           onClick={() => handleChange("simple")}
           aria-pressed={frame === "simple"}
@@ -398,7 +413,7 @@ const downloadDivAsImage = async () => {
       {/* </div> */}
 
 
-            
+           
           
           </>
         )}

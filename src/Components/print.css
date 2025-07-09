@@ -40,12 +40,13 @@
 }
 
 
+
 /* //////////////////////////////////////////////FRAME 3//////////////////////////////////////////////// */
 
 .modern {
 
     /* GIVE OPTION TO CHANGE COLOR by choice */
-    background-color: rgb(238, 238, 238);
+    background-color: #a7a7a7;
     display: flex;
     flex-direction: column;       
     padding-top:8px ;
@@ -78,26 +79,50 @@
 
 
 
+.heart {
+
+    /* GIVE OPTION TO CHANGE COLOR by choice */
+    background-color: #dc7e7e;
+    background-image: url('../frames/Hearts.png');
+    background-size:contain;  
+    /* background-position: center; */
+    display: flex;
+    flex-direction: column;       
+    padding-top:8px ;
+    padding-bottom:5px ;
+    width: 240px;
+    height: 740px;
+    border-radius: 15px;
+    
+
+  }
+
+.heart canvas {
+    margin: 10px 20px;
+    border-radius: 10px;
+    z-index: 1;
+    
+    
+  }
+
+.heart .canvasToDownload {
+
+    margin-bottom: 0;
+}
+
+.heart .footer-date{
+    color: #000000;
+    font-family: Pacifico,Courier New, monospace;
+    font-weight: 700;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
 /* ///////////////////////////////////EXTRA/////////////////////////// */
-/* .frame-btn {
-  color: blue;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  transition: background-color 0.3s ease;
-}
-
-.frame-btn.Mui-selected {
-  background-color: lightblue;
-  color: darkblue;
-  font-weight: bold;
-}
-
-
-
-.frame-btn:hover {
-  background-color: #e0e0e0;
-  cursor: pointer;
-} */
 
 .frame-btn-container {
 
@@ -106,41 +131,37 @@
     align-items: center;
     gap: 10px;
     margin-top: 20px;
-    /* border: 2px solid black;
-    padding: 10px; */
     
 }
 
 .frame-inst{
-  /* font-family: Poppins;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 12px; */
-   font-family: "Fredoka", sans-serif;
+  font-family: "Fredoka", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
 }
 
-/* button-55 {
-  outline: none;
-  color: #DAA06D;
-  padding: 1em;
-  padding-left: 3em;
-  padding-right: 3em;
-  border: 2px dashed #DAA06D;
-  border-radius: 15px;
-  background-color: #EADDCA;
-  box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
-  transition: .1s ease-in-out, .4s color;
+.modern {
+  margin-left: 300px;
+  
 }
 
-button-55:active {
-  transform: translateX(0.1em) translateY(0.1em);
-  box-shadow: 0 0 0 4px #EADDCA, 1.5px 1.5px 2.5px 1.5px rgba(0, 0, 0, 0.5);
-} */
+ColorPicker {
+  display: flex;
+}
 
+.rcp {
+  margin-left: 100px; 
+  max-height: 460px;
+}
 
+.rcp-interactive{
+  max-height: 200px;
+}
+
+.rcp-body{
+  padding: 20px 10px 0 10px;
+}
 
 /* CSS */
 .button-55 {
